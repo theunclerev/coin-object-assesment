@@ -31,4 +31,20 @@ let coin = {
 
 coin.flip()
 document.body.append(coin.toString());
-document.body.append(coin.toHTML()); 
+document.body.append(coin.toHTML());
+
+function display20Flips() {
+    for (let i = 0; i < 20; i++) {
+         coin.flip()
+         document.body.append(coin.toString());
+    }
+}
+function display20Images() {
+    for (let i = 0; i < 20; i++) {
+        coin.flip()
+        document.body.append(coin.toHTML());
+    } 
+}
+
+display20Flips();
+display20Images();
